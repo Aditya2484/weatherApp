@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whether forecast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="secondp.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <h2>WHETHER APP</h2>
+        <!-- user approval to agree for giving his current location for knowing the whether -->
+        <div class="tab-container">
+            <p class="tab" data-userweather>Your Whether</p>
+            <p class="tab" data-searchwheather>Search Whether</p>
+        </div>
+        <div class="whether-container">
+            <!-- grant location container -->
+             <div class="sub-container grant-location-container">
+                <img src="./Mini Projects - Class 3 [Codes]/Lecture28 - Weather App/images/location.png" width="60" height="60" loading="lazy" alt="">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get Weather Information</p>
+                <button class="btn" data-grantaccess>Grant Access</button>
+             </div>
+             <!-- search form->form container -->
+              <form class="form-container" data-searchform>
+                <input placeholder="Search for city..." data-searchinput>
+                <button class="btn" type="submit">
+                    <img src="Mini Projects - Class 3 [Codes]/Lecture28 - Weather App/images/search.png" width="15" height="15" loading="lazy" alt="">
+                </button>
+              </form>
+              <!-- loading screen container -->
+              <div class="sub-container loading-container">
+                <img src="Mini Projects - Class 3 [Codes]/Lecture28 - Weather App/images/loading.gif" width="80" height="80" loading="lazy"  alt="">
+                <p>Loading</p>
+              </div>
+              <!-- searched location whether -->
+              <div class="sub-container user-info-container">
+                <div class="name">
+                    <p data-cityname></p>
+                    <img data-countryicon>
+                </div>
+                <p data-whetherdesc></p>
+                <img data-whethericon>
+                <p data-temp></p>
+                <!-- three cards container -->
+                <div class="parameter-container">
+                    <!-- card 1 -->
+                    <div class="parameter">
+                        <img src="Mini Projects - Class 3 [Codes]/Lecture28 - Weather App/images/wind.png" alt="">
+                        <p>Windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+                    <!-- card 2 -->
+                     <div class="parameter">
+                        <img src="Mini Projects - Class 3 [Codes]/Lecture28 - Weather App/images/humidity.png" alt="">
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <!-- card3 -->
+                     <div class="parameter">
+                        <img src="Mini Projects - Class 3 [Codes]/Lecture28 - Weather App/images/cloud.png" alt="">
+                        <p>Clouds</p>
+                        <p data-cloud></p>
+                    </div>
+                </div>
+
+               </div>
+        </div>
+    </div>
+    <script src="secondproject.js"></script>
+</body>
+</html>
